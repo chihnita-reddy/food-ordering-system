@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>HTML5 Layout</title>
+ <style type="text/css">
+ header, section, footer, aside, nav, article, figure, figcaption { 
+ display: block;} 
+ body { 
+ color: #666666; 
+ background-color: #f9f8f6; 
+ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ277vYWeujKKVutCnxEkseb3SFCv3ahHc1Vg&usqp=CAU.jpg"); 
+ background-position: center; 
+ font-family: Georgia, times, serif; 
+ line-height: 1.4em; 
+ margin: 0px;} 
+ .wrapper { 
+ width: 940px; 
+ margin: 20px auto 20px auto; 
+ border: 2px solid #000000; 
+ background-color: #ffffff;} 
+ header { 
+ height: 160px; 
+ background-image: url(https://mcdn.wallpapersafari.com/medium/95/63/MjZVHF.jpg);} 
+ h1 { 
+ text-indent: -9999px; 
+ width: 940px; 
+ height: 130px; 
+ margin: 0px;} 
+ nav, footer { 
+ clear: both; 
+ color: #ffffff; 
+ background-color: #aeaca8; 
+ height: 30px;} 
+ nav ul { 
+ margin: 0px; 
+ padding: 5px 0px 5px 30px;} 
+ nav li { 
+ display: inline; 
+ margin-right: 40px;} 
+ nav li a { 
+color: #ffffff;} 
+ nav li a:hover, nav li a.current { 
+ color: #000000;} 
+ section.courses { 
+ float: left; 
+ width: 659px; 
+ border-right: 1px solid #eeeeee;} 
+ article { 
+ clear: both; 
+ overflow: auto; 
+ width: 100%;} 
+ hgroup { 
+ margin-top:40px;} 
+ figure { 
+ float: left; 
+ width: 290px; 
+ height: 220px; 
+ padding: 5px; 
+ margin: 20px; 
+ border: 1px solid #eeeeee;} 
+ figcaption { 
+ font-size: 90%; 
+ text-align: left;} 
+ aside { 
+ width: 230px; 
+ float: left; 
+ padding: 0px 0px 0px 20px;} 
+ aside section a { 
+ display: block; 
+ padding: 10px; 
+ border-bottom: 1px solid #eeeeee;} 
+ aside section a:hover { 
+ color: #985d6a; 
+ background-color: #efefef;} 
+ a { 
+ color: #de6581; 
+ text-decoration: none;} 
+ h1, h2, h3 { 
+ font-weight: normal;} 
+ h2 {
+margin: 10px 0px 5px 0px; 
+ padding: 0px;} 
+ h3 { 
+ margin: 0px 0px 10px 0px; 
+ color: #de6581;} 
+ aside h2 { 
+ padding: 50px 0px 25px 0px; 
+ color: #de6581;} 
+ footer { 
+ font-size: 80%; 
+ padding: 7px 0px 0px 20px;}
+ </style>
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+</head>
+<body>
+ <div class="wrapper">
+ <header>
+ <h1>Foodiees Kitchen</h1>
+ <nav>
+ <ul>
+ <li><a href="" class="current">home</a></li>
+ <li><a href="">classes</a></li>
+ <li><a href="">catering</a></li>
+ <li><a href="">about</a></li>
+ <li><a href="">contact</a></li>
+ </ul>
+ </nav>
+ </header>
+ <section class="courses">
+ <article>
+ <figure>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVllScOb7ugWRMA7YvLRIqHFOp2Q0a423ocAmzzi9EjQ&s.jpg" alt="Foodies kitchen" />
+ <figcaption>Foodies Kitchen</figcaption>
+ <figcaption>We get remember of food when we are hungry and if you're lazy to prepare then this the app helps you to order your favorite from your favorite restaurent</figcaption>
+ </figure>
+ <hgroup>
+ <h2>Morning Tiffens</h2>
+ <h3>All variety of tiffins available in the morning session.</h3>
+<img src="https://thekavicliving.weebly.com/uploads/1/8/0/6/18069999/694358.jpg?418.jpg" alt="Tiffens"width="250" height="200" />
+ </hgroup>
+<p>Any type of meal readily made once you give the order and then the parcel will be delivered as soon as possible to you so you don't have to wait for your food.</p>
+ </article> 
+ <article>
+ <figure>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOpPzA9qdzVjJv53BOQn6YYGTmmhk0EttNA&usqp=CAU.jpg" alt="Thali" />
+ <figcaption>Thali Special food item <figcaption>
+<figcaption>On any festivals or some occasions if you can't cook all the items then you can use this special food item for all the people<figcaption>
+ </figure>
+ <hgroup>
+ <h2>Fast Foods</h2>
+ <h3>Fast Food Varieties in the dinner and evening snacks</h3>
+<img src="https://b.zmtcdn.com/data/pictures/chains/7/18553857/4bbcd23c0128b01cf9e9cf83968ae6c9.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*.jpg" width="250" height="200" />
+ </hgroup>
+ <p>The Food whatever you want you can order at any time and any place you can have your food you are satisfied even the discounts are also available.</p>
+ </article> 
+ </section>
+ <aside>
+ <section class="popular-recipes">
+ <h2>Popular Recipes</h2>
+ <a href="">Sweets (Kaju Barfi,Laddus)</a>
+ <a href="">Snacks (samosas,puffs)</a>
+ <a href="">Cold Drinks (Thumbs up,Appy)</a>
+ <a href="">Ice Creams (Chocolate,Butterscotch)</a>
+ </section>
+ <section class="contact-details">
+ <h2>Contact</h2>
+ <p>Foodies Kitchen<br />
+ KLians<br />
+ Hyderabad<br />
+ Telangana,India.</p>
+ </section>
+ </aside>
+ <footer>
+ &copy; Foodies @2022
+ </footer>
+ </div><!-- .wrapper -->
+</body>
+</html>

@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Login Page</title>
+ <style type="text/css">
+ header, section, footer, aside, nav, article, figure, figcaption { 
+ display: block;} 
+ body { 
+ color: #666666; 
+ background-color: #f9f8f6; 
+ background-image: url("https://images.cdn4.stockunlimited.net/thumb450/dark-background_2012850.jpg"); 
+ background-position: center; 
+ font-family: Georgia, times, serif; 
+ line-height: 1.4em; 
+ margin: 0px;} 
+ .wrapper { 
+ width: 940px; 
+ margin: 20px auto 20px auto; 
+ border: 2px solid #000000; 
+ background-color: #ffffff;} 
+ header { 
+ height: 160px; 
+ background-image: url(https://mcdn.wallpapersafari.com/medium/95/63/MjZVHF.jpg);} 
+ h1 { 
+ text-indent: -9999px; 
+ width: 940px; 
+ height: 130px; 
+ margin: 0px;} 
+ nav, footer { 
+ clear: both; 
+ color: #ffffff; 
+ background-color: #aeaca8; 
+ height: 30px;} 
+ nav ul { 
+ margin: 0px; 
+ padding: 5px 0px 5px 30px;} 
+ nav li { 
+ display: inline; 
+ margin-right: 40px;} 
+ nav li a { 
+color: #ffffff;} 
+ nav li a:hover, nav li a.current { 
+ color: #000000;} 
+ section.courses { 
+ float: left; 
+ width: 659px; 
+ border-right: 1px solid #eeeeee;} 
+ article { 
+ clear: both; 
+ overflow: auto; 
+ width: 100%;} 
+ hgroup { 
+ margin-top:40px;} 
+ figure { 
+ float: left; 
+ width: 290px; 
+ height: 220px; 
+ padding: 5px; 
+ margin: 20px; 
+ border: 1px solid #eeeeee;} 
+ figcaption { 
+ font-size: 90%; 
+ text-align: left;} 
+ aside { 
+ width: 230px; 
+ float: left; 
+ padding: 0px 0px 0px 20px;} 
+ aside section a { 
+ display: block; 
+ padding: 10px; 
+ border-bottom: 1px solid #eeeeee;} 
+ aside section a:hover { 
+ color: #985d6a; 
+ background-color: #efefef;} 
+ a { 
+ color: #de6581; 
+ text-decoration: none;} 
+ h1, h2, h3 { 
+ font-weight: normal;} 
+ h2 {
+margin: 10px 0px 5px 0px; 
+ padding: 0px;} 
+ h3 { 
+ margin: 0px 0px 10px 0px; 
+ color: #de6581;} 
+ aside h2 { 
+ padding: 50px 0px 25px 0px; 
+ color: #de6581;} 
+ footer { 
+ font-size: 80%; 
+ padding: 7px 0px 0px 20px;}
+ </style>
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+</head>
+<body>
+<body>
+<div id="form">
+  <div class="container">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
+      <div id="userform">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <li class="active"><a href="#signup"  role="tab" data-toggle="tab">Sign up</a></li>
+          <li><a href="#login"  role="tab" data-toggle="tab">Log in</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active in" id="signup">
+            <h2 class="text-uppercase text-center"> Sign Up for Free</h2>
+            <form id="signup">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label>First Name<span class="req">*</span> </label>
+                    <input type="text" class="form-control" id="first_name" required data-validation-required-message="Please enter your name." autocomplete="off">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label> Last Name<span class="req">*</span> </label>
+                    <input type="text" class="form-control" id="last_name" required data-validation-required-message="Please enter your name." autocomplete="off">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label> Your Email<span class="req">*</span> </label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label> Your Phone<span class="req">*</span> </label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label> Password<span class="req">*</span> </label>
+                <input type="password" class="form-control" id="password" required data-validation-required-message="Please enter your password" autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="mrgn-30-top">
+                <button type="submit" class="btn btn-larger btn-block"/>
+                Sign up
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane fade in" id="login">
+            <h2 class="text-uppercase text-center"> Log in</h2>
+            <form id="login">
+              <div class="form-group">
+                <label> Your Email<span class="req">*</span> </label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label> Password<span class="req">*</span> </label>
+                <input type="password" class="form-control" id="password" required data-validation-required-message="Please enter your password" autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="mrgn-30-top">
+                <button type="submit" class="btn btn-larger btn-block"/>
+                Log in
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container --> 
+</div>
+</body>
+</html>
